@@ -2,16 +2,16 @@
 <ModMetaData>
 	<name>Vanilla Chemfuel Redux</name>
 	<author>Tad</author>
-	<packageId>VanillaChemfuelRedux.TN.Core</packageId>
+	<packageId>VCR.Tad.RW.Core</packageId>
 		<supportedVersions>
 			<li>1.6</li>
 		</supportedVersions>
 	<description xml:whitespace="preserve">
-	My attempt to rebalance the Vanilla Chemfuel experience, adding new generators, recipes for chemfuel and requirements. You should progress through chemical study to add new chemfuel-related content.
+My attempt to rebalance the Vanilla Chemfuel experience, adding new generators, recipes for chemfuel and requirements. You should progress through chemical study to add new chemfuel-related content.
 
-	This contains Recipes from my ChemfuelfromX mod, which is available as a standalone here.
-	
-	There are also a few new ways to make Vanilla items via chemfuel.
+This mod is the successor to my ChemfuelfromX mod, which is available as a standalone here: [url]https://steamcommunity.com/sharedfiles/filedetails/?id=2902146860[/url]
+
+There are also a few new ways to make Vanilla items via chemfuel.
 	</description>
 	<loadAfter>
 		<li>InheritableThings.Tad.RW.Core</li>

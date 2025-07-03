@@ -79,7 +79,7 @@
             <Flammability>1.0</Flammability>
             <DeteriorationRate>1.0</DeteriorationRate>
         </statBases>
-        <comps>
+        <comps Inherit="false">
             <li Class="CompProperties_Explosive">
                 <explosiveRadius>0.8</explosiveRadius>
                 <explosiveDamageType>Flame</explosiveDamageType>
@@ -98,7 +98,7 @@
         </researchPrerequisites>
     </ThingDef>
 
-    <ThingDef ParentName="chemfuel" name="AnomalyChem">
+    <ThingDef ParentName="chemfuel" name="AnomalyChem" MayRequire="Ludeon.RimWorld.Anomaly">
         <defName>ChemfuelFromAnomaly</defName>
         <label>Anomaly Chemfuel</label>
         <description>Refined from anomaly creatures, this chemfuel is a byproduct of their unique biology.</description>
@@ -110,7 +110,7 @@
             <Flammability>5.0</Flammability>
             <DeteriorationRate>1.0</DeteriorationRate>
         </statBases>
-        <comps>
+        <comps Inherit="false">
             <li Class="CompProperties_Explosive">
                 <explosiveRadius>2</explosiveRadius>
                 <explosiveDamageType>Flame</explosiveDamageType>
