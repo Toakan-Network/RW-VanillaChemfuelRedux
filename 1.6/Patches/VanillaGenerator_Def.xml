@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Need to override the BiofuelRefining Placement-->
+    <Operation Class="XmlExtensions.PatchOperationSafeReplace">
+        <xpath>Defs/ThingDef[defName='ChemfuelPoweredGenerator']/comps/li[@Class="CompProperties_Power"]</xpath>
+        <compare>Name</compare>
+        <checkAttributes>false</checkAttributes>
+        <safetyDepth>-1</safetyDepth>
+        <value>
+            <basePowerConsumption>-800</basePowerConsumption>
+        </value>
+    </Operation>
+
+
+    <!-- Add Chemfuels to ChemfuelPoweredGenerator comps-->
+    <Operation Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+        <xpath>Defs/ThingDef[defName='ChemfuelPoweredGenerator']/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+        <safetyDepth>-1</safetyDepth>
+        <compare>Name</compare>
+        <checkAttributes>false</checkAttributes>
+        <value>
+            <li>ChemfuelFromAnimal</li>
+            <li>ChemfuelFromHuman</li>
+            <li>ChemfuelFromWaste</li>
+        </value>
+    </Operation>
+</Patch>

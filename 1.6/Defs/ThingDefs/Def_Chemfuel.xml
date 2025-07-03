@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Add a ThingDef for Chemfuel from Waste -->
+    <ThingDef ParentName="chemfuel" name="WasteChem">
+        <defName>ChemfuelFromWaste</defName>
+        <label>Waste Chemfuel</label>
+        <description>Refined from organic waste, this chemfuel is a byproduct of decomposition.</description>
+        <stackLimit>50</stackLimit>
+        <statBases Inherit="false">
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>0.5</MarketValue>
+            <Mass>0.1</Mass>
+            <Flammability>3.0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+        <comps Inherit="false">
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>1.2</explosiveRadius>
+                <explosiveDamageType>Flame</explosiveDamageType>
+                <explosiveExpandPerStackcount>0.037</explosiveExpandPerStackcount>
+                <startWickOnDamageTaken>
+                <li>Flame</li>
+                </startWickOnDamageTaken>
+                <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+                <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1</preExplosionSpawnChance>
+                <wickTicks>70~150</wickTicks>
+            </li>
+        </comps>
+        <researchPrerequisites Inherit="false">
+            <li>WasteChemfuel</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+
+
+    <!-- Add a Recipe for Chemfuel from Animal Corpses -->
+    <ThingDef ParentName="chemfuel" name="AnimalChem">
+        <defName>ChemfuelFromAnimal</defName>
+        <label>Animal Chemfuel</label>
+        <description>Refined from animal corpses, this chemfuel is a byproduct of their bodies.</description>
+        <stackLimit>100</stackLimit>
+        <statBases  Inherit="false">
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>1.8</MarketValue>
+            <Mass>0.05</Mass>
+            <Flammability>2.0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+        <comps Inherit="false">
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>1.5</explosiveRadius>
+                <explosiveDamageType>Flame</explosiveDamageType>
+                <explosiveExpandPerStackcount>0.037</explosiveExpandPerStackcount>
+                <startWickOnDamageTaken>
+                <li>Flame</li>
+                </startWickOnDamageTaken>
+                <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+                <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1</preExplosionSpawnChance>
+                <wickTicks>70~150</wickTicks>
+            </li>
+        </comps>
+        <researchPrerequisites Inherit="false">
+            <li>AnimalChemfuel</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="chemfuel" name="HumanChem">
+        <defName>ChemfuelFromHuman</defName>
+        <label>Human Chemfuel</label>
+        <description>Refined from human corpses, this chemfuel is a byproduct of the human body.</description>
+        <stackLimit>75</stackLimit>
+        <statBases  Inherit="false">
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>0.7</MarketValue>
+            <Mass>0.7</Mass>
+            <Flammability>1.0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>0.8</explosiveRadius>
+                <explosiveDamageType>Flame</explosiveDamageType>
+                <explosiveExpandPerStackcount>0.037</explosiveExpandPerStackcount>
+                <startWickOnDamageTaken>
+                <li>Flame</li>
+                </startWickOnDamageTaken>
+                <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+                <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1</preExplosionSpawnChance>
+                <wickTicks>70~150</wickTicks>
+            </li>
+        </comps>
+        <researchPrerequisites Inherit="false">
+            <li>HumanChemfuel</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="chemfuel" name="AnomalyChem">
+        <defName>ChemfuelFromAnomaly</defName>
+        <label>Anomaly Chemfuel</label>
+        <description>Refined from anomaly creatures, this chemfuel is a byproduct of their unique biology.</description>
+        <stackLimit>50</stackLimit>
+        <statBases  Inherit="false">
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>4.0</MarketValue>
+            <Mass>0.5</Mass>
+            <Flammability>5.0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2</explosiveRadius>
+                <explosiveDamageType>Flame</explosiveDamageType>
+                <explosiveExpandPerStackcount>0.037</explosiveExpandPerStackcount>
+                <startWickOnDamageTaken>
+                <li>Flame</li>
+                </startWickOnDamageTaken>
+                <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+                <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1</preExplosionSpawnChance>
+                <wickTicks>70~150</wickTicks>
+            </li>
+        </comps>
+        <researchPrerequisites Inherit="false">
+            <li>AnomalyChemfuel</li>
+        </researchPrerequisites>
+    </ThingDef>
+</Defs>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ModMetaData>
+	<name>Vanilla Chemfuel Redux</name>
+	<author>Tad</author>
+	<packageId>VanillaChemfuelRedux.Tad.RW.Core</packageId>
+		<supportedVersions>
+			<li>1.6</li>
+		</supportedVersions>
+	<description xml:whitespace="preserve">
+	My attempt to rebalance the Vanilla Chemfuel experience, adding new generators, recipes for chemfuel and requirements. You should progress through chemical study to add new chemfuel-related content.
+
+	This contains Recipes from my ChemfuelfromX mod, which is available as a standalone here.
+	
+	There are also a few new ways to make Vanilla items via chemfuel.
+	</description>
+	<loadAfter>
+		<li>InheritableThings.Tad.RW.Core</li>
+		<li>imranfish.xmlextensions</li>
+	</loadAfter>
+	<incompatibleWith>
+        <li>ChemfuelfromX.Tad.RW.Core</li>
+    </incompatibleWith>
+	<modDependencies>
+		<li>
+			<packageId>InheritableThings.Tad.RW.Core</packageId>
+			<displayName>Inheritable Things</displayName>
+			<downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2902146860</downloadUrl>
+		</li>
+		<li>
+			<packageId>imranfish.xmlextensions</packageId>
+			<displayName>XML Extensions</displayName>
+			<downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+</ModMetaData>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<RecipeDef>
+    <defName>Make_Synthread</defName>
+    <label>Craft synthread</label>
+    <description>Craft synthread out of raw chemical materials.</description>
+    <jobString>Crafting synthread.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Tailor</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <workSkillLearnFactor>0.5</workSkillLearnFactor>
+    <workAmount>1500</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+            <li>ChemfuelFromAnimal</li>
+            <li>ChemfuelFromHuman</li>
+            <li>ChemfuelFromAnomaly</li>
+          </thingDefs>
+        </filter>
+        <count>45</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chemfuel</li>
+        <li>ChemfuelFromAnimal</li>
+        <li>ChemfuelFromHuman</li>
+        <li>ChemfuelFromAnomaly</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+	<products>
+		<Synthread>15</Synthread>
+	</products>
+	<skillRequirements>
+		<Crafting>8</Crafting>
+	</skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <researchPrerequisite>SynthreadFromChemfuel</researchPrerequisite>
+  </RecipeDef>
+</Defs>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ResearchProjectDef>
+        <defName>WasteChemfuel</defName>
+        <label>Waste Chemfuel</label>
+        <description>Research how to convert waste products into chemfuel.</description>
+        <baseCost>200</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>6.00</researchViewX>
+        <researchViewY>5.50</researchViewY>
+        <prerequisites>
+            <li>BiofuelRefining</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <!-- Add AnimalChemfuel -->
+    <ResearchProjectDef>
+        <defName>AnimalChemfuel</defName>
+        <label>Animal Chemfuel</label>
+        <description>Research how to convert animal corpses into chemfuel.</description>
+        <baseCost>300</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>7.00</researchViewX>
+        <researchViewY>5.50</researchViewY>
+        <prerequisites>
+            <li>WasteChemfuel</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <!-- Add ResearchProjectDef -->
+    <ResearchProjectDef>
+        <defName>HumanChemfuel</defName>
+        <label>Human Chemfuel</label>
+        <description>Research how to convert human corpses into chemfuel. Why do you want to do this?!</description>
+        <baseCost>1200</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>AnimalChemfuel</li>
+        </prerequisites>
+        <researchViewX>8.00</researchViewX>
+        <researchViewY>5.50</researchViewY>
+    </ResearchProjectDef>
+
+    <!-- Add ResearchProjectDef -->
+    <ResearchProjectDef MayRequire="Ludeon.RimWorld.Anomaly">
+        <defName>AnomalyChemfuel</defName>
+        <label>Anomaly Chemfuel</label>
+        <description>Research how to convert anomaly creatures into chemfuel.</description>
+        <baseCost>600</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>HumanChemfuel</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>EntityContainment</li>
+        </hiddenPrerequisites>
+        <researchViewX>9.00</researchViewX>
+        <researchViewY>5.50</researchViewY>
+    </ResearchProjectDef>
+
+
+</Defs>

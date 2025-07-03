@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>ChemicalSynthesis</defName>
+    <label>Chemical Synthesis</label>
+    <description>Produce various materials and compounds from chemicals.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>BiofuelRefining</li>
+    </prerequisites>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>6.50</researchViewY>
+  </ResearchProjectDef>
+  
+</Defs>  

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Make Chemfuel from wastepacks -->
+    <RecipeDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="WasteChemfuel">
+		<defName>Make_ChemfuelFromWastepacks</defName>
+		<label>make chemfuel from wastepacks</label>
+		<description>Make a batch of chemfuel from wastepacks.</description>
+        <ingredients Inherit="false">
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Wastepack</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter Inherit="false">
+            <thingDefs>
+                <li>Wastepack</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products Inherit="false">
+            <ChemfuelFromWaste>1</ChemfuelFromWaste>
+        </products>
+	</RecipeDef>
+
+</Defs>

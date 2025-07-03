@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>NeutroFromChemfuelx1</defName>
+    <label>process neutroamine</label>
+    <description>Process neutroamine from chemfuel.</description>
+    <jobString>Processing neutroamine.</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workAmount>1600</workAmount>
+    <targetCountAdjustment>4</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+            <li>ChemfuelFromAnimal</li>
+            <li>ChemfuelFromHuman</li>
+            <li>ChemfuelFromAnomaly</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chemfuel</li>
+        <li>ChemfuelFromAnimal</li>
+        <li>ChemfuelFromHuman</li>
+        <li>ChemfuelFromAnomaly</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Neutroamine>2</Neutroamine>
+    </products>
+    <skillRequirements>
+		<Intellectual>4</Intellectual>
+    </skillRequirements>
+    <workSkill>Intellectual</workSkill>
+    <researchPrerequisite>NeutroamineFromChemfuel</researchPrerequisite>
+    <recipeUsers>
+		<li>DrugLab</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>NeutroFromChemfuelx4</defName>
+    <label>process bulk neutroamine</label>
+    <description>Process 10 neutroamine from chemfuel.</description>
+    <jobString>Processing neutroamine.</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workAmount>2800</workAmount>
+    <targetCountAdjustment>10</targetCountAdjustment>
+    <ingredients>
+    <li>
+        <filter>
+        <thingDefs>
+            <li>Chemfuel</li>
+            <li>ChemfuelFromAnimal</li>
+            <li>ChemfuelFromHuman</li>
+            <li>ChemfuelFromAnomaly</li>
+        </thingDefs>
+        </filter>
+        <count>40</count>
+    </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>Chemfuel</li>
+            <li>ChemfuelFromAnimal</li>
+            <li>ChemfuelFromHuman</li>
+            <li>ChemfuelFromAnomaly</li>
+        </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+        <Neutroamine>8</Neutroamine>
+        </products>
+        <skillRequirements>
+            <Intellectual>6</Intellectual>
+        </skillRequirements>
+        <workSkill>Intellectual</workSkill>
+        <researchPrerequisite>NeutroamineFromChemfuel</researchPrerequisite>
+        <recipeUsers>
+            <li>DrugLab</li>
+        </recipeUsers>
+    </RecipeDef>
+
+</Defs>

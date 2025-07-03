@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Move Chemfuel Generators from Electricity Research to Chemfuel Generators Research-->
+    <Operation Class="XmlExtensions.PatchOperationSafeReplace">
+        <xpath>Defs/ThingDef[defName="ChemfuelPoweredGenerator"]/researchPrerequisites</xpath>
+        <safetyDepth>-1</safetyDepth>
+        <compare>Name</compare>
+        <checkAttributes>false</checkAttributes>
+        <value>
+            <li>Res_ChemfuelGenerators</li>
+        </value>
+    </Operation>
+
+</Patch>

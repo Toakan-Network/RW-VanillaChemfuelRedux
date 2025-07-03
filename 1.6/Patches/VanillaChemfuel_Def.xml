@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Require Chemfuel Research-->
+    <Operation Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+        <xpath>Defs/ThingDef[defName="Chemfuel"]</xpath>
+        <safetyDepth>-1</safetyDepth>
+        <compare>Name</compare>
+        <checkAttributes>false</checkAttributes>
+        <value>
+            <researchPrerequisites>
+                <li>BiofuelRefining</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+</Patch>

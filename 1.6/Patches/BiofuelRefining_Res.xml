@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="XmlExtensions.PatchOperationSafeReplace">
+        <xpath>Defs/ResearchProjectDef[defName='BiofuelRefining']</xpath>
+        <compare>Name</compare>
+        <checkAttributes>false</checkAttributes>
+        <safetyDepth>-1</safetyDepth>
+        <value>
+            <researchViewX>5.00</researchViewX>
+        </value>
+    </Operation>
+
+    <Operation Class="XmlExtensions.PatchOperationSafeReplace">
+        <xpath>Defs/ResearchProjectDef[defName='BiofuelRefining']</xpath>
+        <compare>Name</compare>
+        <checkAttributes>false</checkAttributes>
+        <safetyDepth>-1</safetyDepth>
+        <value>
+            <researchViewY>6.00</researchViewY>
+        </value>
+    </Operation>
+
+</Patch>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Make Chemfuel from Biosolids -->
+    <RecipeDef MayRequire="Dubwise.DubsBadHygiene" ParentName="WasteChemfuel">
+		<defName>Make_ChemfuelFromBiosolids</defName>
+		<label>make chemfuel from biosolids</label>
+		<description>Make a batch of chemfuel from biosolids.</description>
+        <ingredients Inherit="false">
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Biosolids</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter Inherit="false">
+            <thingDefs>
+                <li>Biosolids</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products Inherit="false">
+            <ChemfuelFromWaste>2</ChemfuelFromWaste>
+        </products>
+	</RecipeDef>
+</Defs>

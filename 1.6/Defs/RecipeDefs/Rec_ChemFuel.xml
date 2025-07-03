@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Add a Recipe for Chemfuel from Waste -->
+    <RecipeDef Name="WasteChemfuel" Abstract="True">
+        <defName>Make_ChemfuelFromWaste</defName>
+        <label>make chemfuel from waste</label>
+        <description>Make a batch of chemfuel from organic waste.</description>
+        <jobString>Refining chemfuel from waste</jobString>
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workAmount>1000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <ingredients />
+        <fixedIngredientFilter />
+        <defaultIngredientFilter />
+        <products>
+            <ChemfuelFromWaste>1</ChemfuelFromWaste>
+        </products>
+        <researchPrerequisites>
+            <li>WasteChemfuel</li>
+        </researchPrerequisites>
+        <recipeUsers>
+            <li>BiofuelRefinery</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <!-- Add a Recipe for Chemfuel from Animals-->
+    <RecipeDef>
+        <defName>Make_AnimalFuel</defName>
+        <label>make chemfuel from animals</label>
+        <description>Convert animals into chemfuel. It's a bit grim.</description>
+        <jobString>Turning animals into fuel.</jobString>
+        <effectWorking>Cremate</effectWorking>
+        <recipeUsers>
+            <li>BiofuelRefinery</li>
+        </recipeUsers>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workAmount>2000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <customSummary>Animal corpses</customSummary>
+                    <categories>
+                        <li>Corpses</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>CorpsesAnimal</li>
+            </categories>
+        </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <categories>
+                <li>CorpsesAnimal</li>
+            </categories>
+            <disallowedCategories>
+                <li>CorpsesHumanlike</li>
+                <li>CorpsesMechanoid</li>
+                <li>CorpsesEntity</li>
+            </disallowedCategories>
+        </defaultIngredientFilter>
+        <products>
+            <ChemfuelFromAnimal>10</ChemfuelFromAnimal>
+        </products>
+        <researchPrerequisite>
+            <li>AnimalChemfuel</li>
+        </researchPrerequisite>
+    </RecipeDef>
+
+    <!-- Add a Recipe for Humanlike Fuel-->
+    <RecipeDef>
+        <defName>Make_HumanlikeFuel</defName>
+        <label>make chemfuel from people</label>
+        <description>Convert People into chemfuel. Nasty...</description>
+        <jobString>You're doing what?!</jobString>
+        <effectWorking>Cremate</effectWorking>
+        <recipeUsers>
+            <li>BiofuelRefinery</li>
+        </recipeUsers>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workAmount>2500</workAmount> 
+        <ingredients>
+            <li>
+                <filter>
+                    <customSummary>Human corpses</customSummary>
+                    <categories>
+                        <li>Corpses</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>CorpsesHumanlike</li>
+            </categories>
+        </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <thingDefs>
+                <li>Corpse_Human</li>
+            </thingDefs>
+            <categories>
+                <li>CorpsesHumanlike</li>
+            </categories>
+            <disallowedCategories>
+                <li>CorpsesAnimal</li>
+                <li>CorpsesMechanoid</li>
+                <li>CorpsesEntity</li>
+            </disallowedCategories>
+        </defaultIngredientFilter>
+        <products>
+            <ChemfuelFromHuman>20</ChemfuelFromHuman>
+        </products>
+        <researchPrerequisite>
+            <li>HumanChemfuel</li>
+        </researchPrerequisite>
+    </RecipeDef>
+
+    <!-- Add Recipe for Anomaly Creatures-->
+    <RecipeDef MayRequire="Ludeon.RimWorld.Anomaly">
+        <defName>Make_AnomalyCreatureFuel</defName>
+        <label>make chemfuel from anomaly creatures</label>
+        <description>Well, that's an interesting use for them.</description>
+        <jobString>Converting the unseen into fuel.</jobString>
+        <effectWorking>Cremate</effectWorking>
+        <recipeUsers>
+            <li>BiofuelRefinery</li>
+        </recipeUsers>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workAmount>4000</workAmount> 
+        <ingredients>
+            <li>
+                <filter>
+                    <customSummary>Anomaly creature corpses</customSummary>
+                    <categories>
+                        <li>CorpsesEntity</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>CorpsesEntity</li>
+            </categories>
+        </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <categories>
+                <li>CorpsesEntity</li>
+            </categories>
+            <disallowedCategories>
+                <li>CorpsesHumanlike</li>
+                <li>CorpsesAnimal</li>
+                <li>CorpsesMechanoid</li>
+            </disallowedCategories>
+        </defaultIngredientFilter>
+        <products>
+            <ChemfuelFromAnomaly>50</ChemfuelFromAnomaly>
+        </products>
+        <researchPrerequisites>
+            <li>AnomalyChemfuel</li>
+        </researchPrerequisites>
+    </RecipeDef>
+</Defs>
