@@ -9,13 +9,13 @@
         <jobString>Refining chemfuel from waste</jobString>
         <effectWorking>Cremate</effectWorking>
         <soundWorking>Recipe_Cremate</soundWorking>
-        <workAmount>1000</workAmount>
+        <workAmount>600</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <ingredients />
         <fixedIngredientFilter />
         <defaultIngredientFilter />
         <products>
-            <ChemfuelFromWaste>1</ChemfuelFromWaste>
+            <Chemfuel>1</Chemfuel>
         </products>
         <researchPrerequisites>
             <li>WasteChemfuel</li>
@@ -36,7 +36,7 @@
             <li>BiofuelRefinery</li>
         </recipeUsers>
         <soundWorking>Recipe_Cremate</soundWorking>
-        <workAmount>2000</workAmount>
+        <workAmount>1200</workAmount>
         <ingredients>
             <li>
                 <filter>
@@ -64,7 +64,7 @@
             </disallowedCategories>
         </defaultIngredientFilter>
         <products>
-            <ChemfuelFromAnimal>10</ChemfuelFromAnimal>
+            <Chemfuel>5</Chemfuel>
         </products>
         <researchPrerequisite>
             <li>AnimalChemfuel</li>
@@ -113,7 +113,7 @@
             </disallowedCategories>
         </defaultIngredientFilter>
         <products>
-            <ChemfuelFromHuman>20</ChemfuelFromHuman>
+            <Chemfuel>10</Chemfuel>
         </products>
         <researchPrerequisite>
             <li>HumanChemfuel</li>
@@ -159,7 +159,7 @@
             </disallowedCategories>
         </defaultIngredientFilter>
         <products>
-            <ChemfuelFromAnomaly>50</ChemfuelFromAnomaly>
+            <Chemfuel>25</Chemfuel>
         </products>
         <researchPrerequisites>
             <li>AnomalyChemfuel</li>

@@ -12,21 +12,5 @@
         </value>
     </Operation>
 
-
-    <!-- Add Chemfuels to ChemfuelPoweredGenerator comps-->
-    <Operation Class="XmlExtensions.PatchOperationSafeAddOrReplace">
-        <xpath>Defs/ThingDef[defName='ChemfuelPoweredGenerator']/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter</xpath>
-        <safetyDepth>2</safetyDepth>
-        <compare>Name</compare>
-        <checkAttributes>false</checkAttributes>
-        <value>
-            <thingDefs>
-                <li>ChemfuelFromWaste</li>
-                <li>Chemfuel</li>
-                <li>ChemfuelFromAnimal</li>
-                <li>ChemfuelFromHuman</li>
-            </thingDefs>
-        </value>
-    </Operation>
 </Patch>
  

@@ -16,9 +16,6 @@
         <filter>
           <thingDefs>
             <li>Chemfuel</li>
-            <li>ChemfuelFromAnimal</li>
-            <li>ChemfuelFromHuman</li>
-            <li>ChemfuelFromAnomaly</li>
           </thingDefs>
         </filter>
         <count>10</count>
@@ -27,9 +24,6 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>Chemfuel</li>
-        <li>ChemfuelFromAnimal</li>
-        <li>ChemfuelFromHuman</li>
-        <li>ChemfuelFromAnomaly</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -60,9 +54,6 @@
         <filter>
         <thingDefs>
             <li>Chemfuel</li>
-            <li>ChemfuelFromAnimal</li>
-            <li>ChemfuelFromHuman</li>
-            <li>ChemfuelFromAnomaly</li>
         </thingDefs>
         </filter>
         <count>40</count>
@@ -71,9 +62,6 @@
     <fixedIngredientFilter>
         <thingDefs>
             <li>Chemfuel</li>
-            <li>ChemfuelFromAnimal</li>
-            <li>ChemfuelFromHuman</li>
-            <li>ChemfuelFromAnomaly</li>
         </thingDefs>
         </fixedIngredientFilter>
         <products>

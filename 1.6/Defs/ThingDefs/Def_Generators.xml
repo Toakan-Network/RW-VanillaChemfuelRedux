@@ -26,9 +26,7 @@
                 <fuelCapacity>20.0</fuelCapacity>
                 <fuelFilter>
                     <thingDefs>
-                        <li>ChemfuelFromWaste</li>
                         <li>Chemfuel</li>
-                        <li>ChemfuelFromAnimal</li>
                     </thingDefs>
                 </fuelFilter>
                 <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
@@ -95,11 +93,7 @@
                 <fuelCapacity>50.0</fuelCapacity>
                 <fuelFilter>
                     <thingDefs>
-                        <li>ChemfuelFromWaste</li>
                         <li>Chemfuel</li>
-                        <li>ChemfuelFromAnimal</li>
-                        <li>ChemfuelFromHuman</li>
-                        <li>ChemfuelFromAnomaly</li>
                     </thingDefs>
                 </fuelFilter>
                 <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>

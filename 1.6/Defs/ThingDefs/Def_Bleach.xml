@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Add a Def for Bleach -->
+    <ThingDef ParentName="chemfuel" name="Bleach">
+        <defName>Bleach</defName>
+        <label>Bleach</label>
+        <description>Bleach is a powerful chemical used for cleaning and disinfecting.</description>
+        <stackLimit>20</stackLimit>
+        <statBases Inherit="false">
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>2.0</MarketValue>
+            <Mass>0.1</Mass>
+            <Flammability>0.5</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+        <graphicData Inherit="false">
+            <texPath>Things/Item/Resource/Neutroamine</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.80</drawSize>
+        </graphicData>
+        <comps Inherit="false">
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>1.0</explosiveRadius>
+                <explosiveDamageType>Flame</explosiveDamageType>
+                <explosiveExpandPerStackcount>0.02</explosiveExpandPerStackcount>
+                <startWickHitPointsPercent>0.5</startWickHitPointsPercent>
+                <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1</preExplosionSpawnChance>
+                <wickTicks>100~200</wickTicks>
+            </li>
+        </comps>
+        <researchPrerequisites Inherit="false">
+            <li>ChemicalSynthesis</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <!-- Add Bleached Cloth -->
+    <ThingDef ParentName="cloth" name="BleachedCloth">
+        <defName>BleachedCloth</defName>
+        <label>Bleached Cloth</label>
+        <description>Cloth that has been bleached to remove color and impurities.</description>
+        <stackLimit>75</stackLimit>
+        <statBases Inherit="false">
+            <StuffPower_Armor_Sharp>0.25</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.10</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>15</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
+            <MaxHitPoints>60</MaxHitPoints>
+            <MarketValue>.75</MarketValue>
+            <Mass>0.020</Mass>
+            <Flammability>1.6</Flammability>
+            <DeteriorationRate>6</DeteriorationRate>
+        </statBases>
+        <researchPrerequisites Inherit="false">
+            <li>ChemicalSynthesis</li>
+        </researchPrerequisites>
+    </ThingDef>
+</Defs>

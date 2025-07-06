@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<RecipeDef>
+  <RecipeDef>
     <defName>Make_Synthread</defName>
     <label>Craft synthread</label>
     <description>Craft synthread out of raw chemical materials.</description>
@@ -16,24 +16,18 @@
         <filter>
           <thingDefs>
             <li>Chemfuel</li>
-            <li>ChemfuelFromAnimal</li>
-            <li>ChemfuelFromHuman</li>
-            <li>ChemfuelFromAnomaly</li>
           </thingDefs>
         </filter>
-        <count>45</count>
+        <count>75</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Chemfuel</li>
-        <li>ChemfuelFromAnimal</li>
-        <li>ChemfuelFromHuman</li>
-        <li>ChemfuelFromAnomaly</li>
       </thingDefs>
     </fixedIngredientFilter>
 	<products>
-		<Synthread>15</Synthread>
+		<Synthread>3</Synthread>
 	</products>
 	<skillRequirements>
 		<Crafting>8</Crafting>

@@ -21,7 +21,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products Inherit="false">
-            <ChemfuelFromWaste>2</ChemfuelFromWaste>
+            <Chemfuel>2</Chemfuel>
         </products>
 	</RecipeDef>
 </Defs>
